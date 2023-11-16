@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random OTP Generator</title>
+  <link rel="stylesheet" href="OTP generat.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="password-generator">
+          <h2>Password Generator</h2>
+          <div class="password">
+            <p id="passwordBox"></p><i class="far fa-clipboard" onclick="copyPassword()"></i>
+          </div>
+          <div>
+            <label for="length">Length</label>
+            <input type="number" id="length" min="6" max="10" value="6">
+          </div>
+    
+          <div>
+            <label for="number">Include Number</label>
+            <input type="checkbox" id="number" checked>
+          </div>
+    
+          <button onclick="createPassword()">Get Random Password</button>
+        </div>
+        <script src="OTP Generat.js"></script>
+      </div>
+</body>
+</html>
